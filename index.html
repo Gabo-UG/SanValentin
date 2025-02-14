@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti 💖</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Carta cerrada -->
+        <div id="closedCard" class="closed-card">
+            <div class="envelope"></div>
+            <button id="openButton">💌 Ábreme</button>
+        </div>
+
+        <!-- Carta abierta -->
+        <div id="openCard" class="open-card hidden">
+            <div class="letter">
+                <p>Hola mi Noe Bonita, Tal vez no es el mejor regalo pero lo hago de corazón, espero te guste mucho y quiero que sepas que soy feliz por que estas en mi vida, te adoro mucho y te quiero plus plus gracias por ser mi Valentine💗</p>
+                <button id="showFlower">🌷 Ver ramo</button>
+            </div>
+        </div>
+
+        <!-- Ramo de tulipanes -->
+        <div id="flowerContainer" class="flower-container hidden">
+            <svg viewBox="0 0 300 400" class="tulip-bouquet">
+                <!-- Tallo y hojas -->
+                <g class="stems">
+                    <rect x="140" y="150" width="10" height="200" fill="green"/>
+                    <rect x="120" y="160" width="10" height="180" fill="green"/>
+                    <rect x="160" y="160" width="10" height="180" fill="green"/>
+                    <rect x="100" y="170" width="10" height="160" fill="green"/>
+                    <rect x="180" y="170" width="10" height="160" fill="green"/>
+                </g>
+
+                <!-- Pétalos -->
+                <g class="petals">
+                    <path d="M 145 100 Q 175 70 205 120 T 145 180" fill="pink"/>
+                    <path d="M 145 100 Q 115 70 85 120 T 145 180" fill="pink"/>
+                    <path d="M 145 100 Q 130 50 115 100 T 145 180" fill="lightpink"/>
+                    <path d="M 145 100 Q 160 50 175 100 T 145 180" fill="lightpink"/>
+
+                    <path d="M 125 110 Q 150 85 175 130 T 125 190" fill="red"/>
+                    <path d="M 125 110 Q 100 85 75 130 T 125 190" fill="red"/>
+                    <path d="M 125 110 Q 115 60 95 110 T 125 190" fill="lightcoral"/>
+                    <path d="M 125 110 Q 135 60 155 110 T 125 190" fill="lightcoral"/>
+
+                    <path d="M 165 110 Q 190 85 215 130 T 165 190" fill="yellow"/>
+                    <path d="M 165 110 Q 140 85 115 130 T 165 190" fill="yellow"/>
+                    <path d="M 165 110 Q 155 60 135 110 T 165 190" fill="lightyellow"/>
+                    <path d="M 165 110 Q 175 60 195 110 T 165 190" fill="lightyellow"/>
+                </g>
+
+                <!-- Lazo decorativo -->
+                <ellipse cx="145" cy="280" rx="30" ry="15" fill="red"/>
+                <path d="M 115 280 Q 90 260 75 280 T 115 320" fill="red"/>
+                <path d="M 175 280 Q 200 260 215 280 T 175 320" fill="red"/>
+            </svg>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
